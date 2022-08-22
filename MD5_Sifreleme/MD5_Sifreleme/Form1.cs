@@ -65,8 +65,9 @@ namespace MD5_Sifreleme
                 sw.WriteLine("ORJİNAL METİN" + " -> " + "ŞİFRELİ METİN");
                 sw.WriteLine("");
                 sw.Close();
-                
-                MessageBox.Show("Yeni Dosya Oluşturuldu");
+
+                string baslik = "Yeni Dosya Oluşturuldu";
+                MessageBox.Show(dosyaYolu, baslik);
                 goto DosyayaYaz;
             }
 
@@ -76,7 +77,8 @@ namespace MD5_Sifreleme
                 StreamWriter sw = File.AppendText(dosyaYolu);    
                 sw.WriteLine(metin + " -> " + sifreliMetin);
                 sw.Close();
-                MessageBox.Show("Şifreleme kaydedildi.");
+                string baslik = "Şifreleme kaydedildi";
+                MessageBox.Show(dosyaYolu,baslik);
             }
 
         }
