@@ -1,4 +1,4 @@
-﻿
+
 namespace MD5_Sifreleme
 {
     partial class Form1
